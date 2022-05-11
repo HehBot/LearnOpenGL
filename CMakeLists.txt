@@ -20,5 +20,7 @@ target_link_libraries(Tutorial glfw)
 add_subdirectory(ext/glad)
 target_link_libraries(Tutorial glad)
 
+target_link_libraries(Tutorial assimp)
+
 find_package(OpenGL REQUIRED)
 target_link_libraries(Tutorial OpenGL::GL)
